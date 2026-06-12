@@ -1,0 +1,43 @@
+SIMPLIFIED EMAILJS TEMPLATE SETUP
+
+1. LOGIN TO EMAILJS (https://www.emailjs.com/)
+2. CREATE A NEW EMAIL TEMPLATE
+3. USE THE SIMPLE TEMPLATE BELOW:
+
+==============================================================
+SUBJECT: Doctor Verification Code
+==============================================================
+
+Email: {{email}}
+Passcode: {{passcode}}
+Time: {{time}}
+
+==============================================================
+
+TEMPLATE VARIABLES TO MAP IN EMAILJS:
+- {{email}} → Doctor's email address
+- {{passcode}} → 4-digit verification code
+- {{time}} → Current timestamp when approved
+
+==============================================================
+
+THAT'S IT! SIMPLE AND CLEAN.
+
+The doctor will receive:
+- Their email address
+- 4-digit verification code
+- Time when they were approved
+
+==============================================================
+
+==============================================================
+
+EMAILJS SETUP CHECKLIST:
+□ Create EmailJS account
+□ Set up email service (Gmail/Outlook)
+□ Create email template with above content
+□ Get Service ID, Template ID, and Public Key
+□ Update config/emailjs.config.js with your credentials
+□ Test email functionality
+
+==============================================================

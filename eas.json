@@ -1,0 +1,32 @@
+{
+  "cli": {
+    "version": ">= 7.8.6",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"
+      },
+      "env": {
+        "GOOGLE_SERVICES_JSON": "file:android/app/google-services.json"
+      }
+    },
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "GOOGLE_SERVICES_JSON": "file:android/app/google-services.json"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
